@@ -1,0 +1,22 @@
+<html ng-app="MyApp">
+
+<head>
+    <!--Comment out the polyfill to see the issue in action-->
+    <script src="../../dist/base-tag-anchor-polyfill.js"></script>
+
+    <!--base tag pointing to a sub directory which is a single page application-->
+    <base href="http://localhost:63342/base-tag-polyfill/examples/advanced/angular-app/"/>
+
+
+    <script src="http://code.angularjs.org/snapshot/angular.js"></script>
+    <script src="http://code.angularjs.org/snapshot/angular-route.js"></script>
+
+    <script src="./main.js"></script>
+</head>
+<body>
+
+
+<ng-view></ng-view>
+
+</body>
+</html>

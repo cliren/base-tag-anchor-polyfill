@@ -1,0 +1,60 @@
+/* set up the keyframes */
+// Inspired by http://davidwalsh.name/detect-node-insertion
+
+@keyframes anchorStartingWithHash {
+  from {
+    opacity: 0.99;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes anchorStartingWithHash {
+  from {
+    opacity: 0.99;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes anchorStartingWithHash {
+  from {
+    opacity: 0.99;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes anchorStartingWithHash {
+  from {
+    opacity: 0.99;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes anchorStartingWithHash {
+  from {
+    opacity: 0.99;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+a[href^='#'] {
+  animation-duration: 0.001s;
+  -o-animation-duration: 0.001s;
+  -ms-animation-duration: 0.001s;
+  -moz-animation-duration: 0.001s;
+  -webkit-animation-duration: 0.001s;
+  animation-name: anchorStartingWithHash;
+  -o-animation-name: anchorStartingWithHash;
+  -ms-animation-name: anchorStartingWithHash;
+  -moz-animation-name: anchorStartingWithHash;
+  -webkit-animation-name: anchorStartingWithHash;
+}

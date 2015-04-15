@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Basic Example</title>
+    <base href="../dist/"/>
+
+    <script src="../../dist/base-tag-anchor-polyfill.js"></script>
+
+    <script>
+
+        var addAnchor = function(path, text) {
+            var element = document.createElement("a");
+            element.setAttribute("href", path);
+            element.innerHTML = text;
+            // and append it to where you'd like it to go:
+            document.body.appendChild(element);
+        };
+
+        document.addEventListener('DOMContentLoaded', function() {
+            addAnchor('#/new', 'New');
+        });
+
+
+    </script>
+
+</head>
+<body>
+
+
+<!--The content will be injected here-->
+<div id="content">
+
+    <ul>
+        <li><a href="#/home">Home</a></li>
+        <li><a href="#/help">Help</a></li>
+        <li><a>External</a></li>
+    </ul>
+
+
+</div>
+
+</body>
+</html>
