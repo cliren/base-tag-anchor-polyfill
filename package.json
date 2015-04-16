@@ -1,7 +1,7 @@
 {
   "name": "base-tag-anchor-polyfill",
   "version": "1.0.0",
-  "author": "Surender Katikaneni <suren@climate.com>",
+  "author": "http://cliren.github.io/",
   "description": "A polyfill to replace anchor resource when using HTML <base> tag",
   "main": "main.js",
   "scripts": {
